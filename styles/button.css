@@ -11,16 +11,20 @@ button
     background-color: var(--default-color);
     border-style: none;
     border-radius: 32px;
-    box-shadow: var(--shadow-color) 0 var(--button-depth) 9px, var(--shadow-inset);
+    box-shadow: var(--shadow-color) 0 var(--button-depth) 10px, var(--shadow-inset);
+    
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: transparent;
 
     transition: all 0.25s;
     user-select: none;
 
     --button-height: -5px;
-    --button-depth: 10px;
+    --button-depth: 5px;
     --default-color: #e0d9d0;
     --active-color: #d3cbc1;
-    --shadow-color: #615a54;
+    --shadow-color: #68615b;
     --shadow-inset: #3f3c3c40 0 -5px 10px inset;
 }
 
@@ -28,7 +32,7 @@ button:hover
 {
     transform: translateY(var(--button-height));
 
-    box-shadow: var(--shadow-color) 0 calc(var(--button-depth) - var(--button-height)) 20px, var(--shadow-inset);
+    box-shadow: var(--shadow-color) 0 calc(var(--button-depth) - var(--button-height)) 15px, var(--shadow-inset);
 }
 
 button:active
@@ -41,9 +45,5 @@ button:active
 
 button:focus-visible
 {
-    outline-style: solid;
-    outline-width: 4px;
     outline-color: var(--text-color);
-
-    transition: all 0.05s;
 }

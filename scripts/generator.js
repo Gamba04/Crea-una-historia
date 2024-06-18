@@ -5,6 +5,9 @@ const genres =
     "comedia",
     "suspenso",
     "terror",
+    "fantasía",
+    "ciencia ficción",
+    "misterio",
 ];
 
 const epochs =
