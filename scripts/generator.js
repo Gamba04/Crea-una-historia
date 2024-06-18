@@ -28,11 +28,13 @@ const twists =
     "la tierra esta congelada",
 ];
 
+let lastValues;
+
 function GenerateValues()
 {
-    let genre = GetRandomValue(genres);
-    let epoch = GetRandomValue(epochs);
-    let twist = GetRandomValue(twists);
+    let genre = GetRandomValue(genres, lastValues?.genre);
+    let epoch = GetRandomValue(epochs, lastValues?.epoch);
+    let twist = GetRandomValue(twists, lastValues?.twist);
 
     let values =
     {
@@ -41,14 +43,19 @@ function GenerateValues()
         twist
     };
 
+    lastValues = values;
+
     return values;
 }
 
-function GetRandomValue(list)
+function GetRandomValue(list, lastValue)
 {
-    let index = GetRandomIndex(list.length);
+    let trim = [...list];
+    trim.splice(trim.indexOf(lastValue), 1);
 
-    return list[index];
+    let index = GetRandomIndex(trim.length);
+
+    return trim[index];
 }
 
 function GetRandomIndex(length)
