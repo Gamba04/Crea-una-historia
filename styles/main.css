@@ -1,3 +1,15 @@
+@font-face
+{
+    font-family: "Assistant";
+    src: url("../resources/fonts/Assistant/Assistant-ExtraLight.ttf");
+}
+
+@font-face
+{
+    font-family: "Raleway";
+    src: url("../resources/fonts/Raleway/Raleway-ExtraLight.ttf");
+}
+
 *
 {
     margin: 0px;
@@ -10,8 +22,11 @@
     --accent: #b58164;
     
     background-color: #dbd4ca;
-    font-family: 'Segoe UI';
+    font-family: "Assistant";
     font-weight: lighter;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 main
@@ -19,7 +34,7 @@ main
     position: relative;
     top: 300px;
     width: 1000px;
-    max-width: 75%;
+    max-width: 85%;
     margin-inline: auto;
     text-align: center;
 }
