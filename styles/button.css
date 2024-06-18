@@ -1,0 +1,49 @@
+button
+{
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 75px;
+    margin: 100px;
+
+    color: var(--text-color);
+    background-color: var(--default-color);
+    border-style: none;
+    border-radius: 32px;
+    box-shadow: var(--shadow-color) 0 var(--button-depth) 9px, var(--shadow-inset);
+
+    transition: all 0.25s;
+    user-select: none;
+
+    --button-height: -5px;
+    --button-depth: 10px;
+    --default-color: #e0d9d0;
+    --active-color: #d3cbc1;
+    --shadow-color: #615a54;
+    --shadow-inset: #3f3c3c40 0 -5px 10px inset;
+}
+
+button:hover
+{
+    transform: translateY(var(--button-height));
+
+    box-shadow: var(--shadow-color) 0 calc(var(--button-depth) - var(--button-height)) 20px, var(--shadow-inset);
+}
+
+button:active
+{
+    transform: translateY(var(--button-depth));
+
+    background-color: var(--active-color);
+    box-shadow: var(--shadow-color) 0 0, var(--shadow-color) 0 5px 10px inset;
+}
+
+button:focus-visible
+{
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: var(--text-color);
+
+    transition: all 0.05s;
+}

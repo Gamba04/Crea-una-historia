@@ -1,0 +1,49 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root
+{
+    --text-color: #444444;
+    --accent: #b58164;
+    
+    background-color: #dbd4ca;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+}
+
+main
+{
+    position: relative;
+    top: 300px;
+    width: 1000px;
+    max-width: 75%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+pre
+{
+    color: var(--text-color);
+    text-decoration-color: var(--text-color);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 2.5rem;
+    text-wrap: balance;
+    cursor: default;
+}
+
+u
+{
+    color: var(--accent);
+    text-decoration-color: inherit;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.025em;
+}
+
+::selection
+{
+    color: var(--accent);
+}
