@@ -39,7 +39,8 @@ const twists =
     "la luna se cae",
     "se descubre un mundo desconocido",
     "es una distopía",
-    "la historia es vista desde los ojos de alguien más",
+    "todo es un reality show",
+    "hay un virus letal",
 ];
 
 let lastValues;
