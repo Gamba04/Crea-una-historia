@@ -41,7 +41,7 @@ const twists =
     "es una distopía",
     "todo es un reality show",
     "hay un virus letal",
-    "Jesus nunca nació",
+    "Jesús nunca nació",
 ];
 
 let lastValues;
