@@ -1,31 +1,45 @@
 const genres =
 [
-    "acción",
-    "drama",
     "comedia",
-    "suspenso",
-    "terror",
-    "fantasía",
+    "romance",
     "ciencia ficción",
+    "acción",
+    "fantasía",
+    "drama",
+    "vaqueros",
     "misterio",
+    "suspenso",
 ];
 
 const epochs =
 [
-    "de la Edad de Piedra",
-    "del Imperio Otomano",
-    "de la Revolución Industrial",
-    "de la Primera Guerra Mundial",
+    "de la Prehistoria",
+    "de la Antigua Grecia",
+    "vikinga",
+    "medieval",
+    "pre-hispánica",
+    "victoriana",
+    "de las Cruzadas",
+    "de la Edad Moderna",
+    "de la Segunda Guerra Mundial",
+    "de la Generación X",
     "de la Colonización Espacial",
 ];
 
 const twists =
 [
-    "el protagonista es el villano",
-    "no hay comida",
     "es el fin del mundo",
-    "es en un sueño",
-    "la tierra esta congelada",
+    "el protagonista es el villano",
+    "no hay agua",
+    "la trama es caleidoscópica",
+    "el protagonista viaja en el tiempo",
+    "el protagonista esta muerto",
+    "Eva no se comió la manzana",
+    "llegan los extraterrestres",
+    "la luna desaparece",
+    "se descubre un mundo desconocido",
+    "es una distopía",
+    "la historia es vista desde los ojos de alguien más",
 ];
 
 let lastValues;
