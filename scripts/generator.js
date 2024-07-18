@@ -13,7 +13,7 @@ const genres =
 
 const epochs =
 [
-    "de la Prehistoria",
+    "de la prehistoria",
     "de la Antigua Grecia",
     "vikinga",
     "medieval",
@@ -30,13 +30,13 @@ const twists =
 [
     "es el fin del mundo",
     "el protagonista es el villano",
-    "no hay agua",
+    "no hay comida",
     "la trama es caleidoscópica",
     "el protagonista viaja en el tiempo",
     "el protagonista esta muerto",
     "Eva no se comió la manzana",
     "llegan los extraterrestres",
-    "la luna desaparece",
+    "la luna se cae",
     "se descubre un mundo desconocido",
     "es una distopía",
     "la historia es vista desde los ojos de alguien más",
